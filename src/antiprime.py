@@ -18,7 +18,7 @@ def main():
     if p > t:
         return "anti-prime"
     else:
-        return "not-anti-prime"
+        return "not anti-prime"
     ## THE LAST LINES OF YOUR CODE SHOULD EITHER
     ## RETURN THE VALUE "anti-prime" or "not anti-prime"
     ## REPLACE THE FOLLOWING LINE BY WHATEVER LINES
