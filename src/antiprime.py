@@ -1,10 +1,17 @@
 ## ADD WHATEVER ARGUMENTS ARE NECESSARY TO THE MAIN FUNCTION
 ## IN THE SAME ORDER AS THE ARGUMENTS ARE TAKEN FROM THE
 ## COMMAND LINE SPECIFIED BELOW
+
+import sys
+
+
 def main():
     ## YOU CODE SHOULD START HERE AST THE SAME
     ## IDENTATION AS THIS COMMENT
-    x = int(input("Enter an integer number:"))
+    if len(sys.argv) > 1:
+        x = int(sys.argv[1])
+    else:
+        x = int(input("Enter an integer number:"))
 
     p = divisors(x)
     t = compare(x)
@@ -17,7 +24,6 @@ def main():
     ## REPLACE THE FOLLOWING LINE BY WHATEVER LINES
     ## OF CODE ALLOW THIS FUNCTION TO RETURN THE VALUE
     ## "anti-prime" or "not anti-prime"
-
 
 
 def divisors(a):
@@ -38,6 +44,7 @@ def compare(e):
             j = divisors(h)
         h += 1
     return j
+
 
 ## DO NOT REMOVE THIS LINE BELOW
 if __name__ == "__main__":
